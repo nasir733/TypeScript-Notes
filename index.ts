@@ -29,6 +29,7 @@ let pid: string | number
 pid = '22'
 
 // Enum
+// Enums allow a developer to define a set of named constants
 enum Direction1 {
   Up = 1,
   Down,
@@ -53,6 +54,7 @@ const user: User = {
   id: 1,
   name: 'John',
 }
+  
 
 // Type Assertion
 let cid: any = 1
@@ -95,7 +97,7 @@ interface PersonInterface {
 }
 
 // Classes
-class Person implements PersonInterface {
+class Person  {
   id: number
   name: string
 
@@ -109,8 +111,8 @@ class Person implements PersonInterface {
   }
 }
 
-const brad = new Person(1, 'Nasir Iqbal')
-const mike = new Person(2, 'Elite Programmer ')
+const nasir = new Person(1, 'Nasir Iqbal')
+const iqbal = new Person(2, 'Elite Programmer ')
 
 // Subclasses
 class Employee extends Person {
